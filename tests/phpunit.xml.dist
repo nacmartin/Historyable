@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./bootstrap.php">
+    <testsuites>
+        <testsuite name="Historyable Extension">
+            <directory suffix=".php">./Nacmartin/Historyable/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
+
