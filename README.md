@@ -21,7 +21,7 @@ We can add more fields to the History entity, for instance some description usef
  * status:4, action: "item with id 67 marked as done".
  * status:5 ...
 
-    /**
+    `/**
     * @ORM\Table(name="history")
     * @ORM\Entity()
     * @Nacmartin\Historyable
@@ -53,7 +53,7 @@ We can add more fields to the History entity, for instance some description usef
         /**
          * @ORM\Column(type="array")
          */
-        private $action;
+        private $action;`
 
 This way we can know what is the last version number of a resource, let the clients know it and if they are out of sync, so that they can take care and ask for a refresh, or whatever makes sense in your application.
 
